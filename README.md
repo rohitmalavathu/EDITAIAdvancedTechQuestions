@@ -3,7 +3,7 @@
 ---
 
 ## **Overview**  
-This project focuses on analyzing the Nucleus-to-Cytoplasm (NC) ratios of urine cells and evaluating model performance using Mean Absolute Error (MAE). It includes a PyTorch-based image segmentation model to predict masks for input images.  
+This project focuses on analyzing the Nucleus-to-Cytoplasm (NC) ratios of urine cells and evaluating model performance using Mean Absolute Error (MAE). It includes a PyTorch-based image segmentation model to predict masks for input images. This project was completed as part of a bonus question on the EDIT AI Summer Internship Application.
 
 ---
 
