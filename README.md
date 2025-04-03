@@ -1,16 +1,14 @@
 # **Project: EDITAISummerInternship**  
 
-I've created a README file summarizing your project, including data sources, methodology, key features, dependencies, and future improvements. Let me know if you'd like any modifications!  
-
 ---
 
 ## **Overview**  
-This project focuses on analyzing image datasets, specifically calculating Nucleus-to-Cytoplasm (NC) ratios and evaluating model performance using Mean Absolute Error (MAE). It includes a PyTorch-based image segmentation model to predict masks for input images.  
+This project focuses on analyzing the Nucleus-to-Cytoplasm (NC) ratios of urine cells and evaluating model performance using Mean Absolute Error (MAE). It includes a PyTorch-based image segmentation model to predict masks for input images.  
 
 ---
 
 ## **Data Sources**  
-The dataset consists of images and their corresponding segmentation masks. The masks are used to determine the NC ratio, which serves as an indicator of potential malignancy.  
+The dataset consists of images and their corresponding segmentation masks. The masks are used to determine the NC ratio, which serves as an indicator of potential malignancy. The data comes from https://github.com/jlevy44/PreliminaryGenerativeHistoPath.
 
 ---
 
