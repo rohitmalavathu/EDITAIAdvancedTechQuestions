@@ -1,74 +1,87 @@
-Project: EDITAISummerInternShip
-This project contains Python code for analyzing and processing image datasets, specifically focusing on calculating Nucleus-to-Cytoplasm (NC) ratios and evaluating model performance using Mean Absolute Error (MAE).
+# **Project: EDITAISummerInternship**  
 
-Table of Contents
-Overview
-Requirements
-Installation
-Usage
-Functions
-nc_ratio
-MAE_and_Results
-Model
-License
-Overview
-This project includes:
+I've created a README file summarizing your project, including data sources, methodology, key features, dependencies, and future improvements. Let me know if you'd like any modifications!  
 
-A function to calculate the Nucleus-to-Cytoplasm (NC) ratio from image masks.
-A function to compute the Mean Absolute Error (MAE) between real and predicted NC ratios.
-A PyTorch-based model for image segmentation, which predicts masks for input images.
-The code is designed to work with datasets containing images and their corresponding masks.
+---
 
-Requirements
-The following Python libraries are required:
+## **Overview**  
+This project focuses on analyzing image datasets, specifically calculating Nucleus-to-Cytoplasm (NC) ratios and evaluating model performance using Mean Absolute Error (MAE). It includes a PyTorch-based image segmentation model to predict masks for input images.  
 
-numpy
-torch
-torchvision
-matplotlib
-Additionally, ensure you have a trained PyTorch model saved as model.pth.
+---
 
-Installation
-Clone this repository:
+## **Data Sources**  
+The dataset consists of images and their corresponding segmentation masks. The masks are used to determine the NC ratio, which serves as an indicator of potential malignancy.  
 
-Create a virtual environment and activate it:
+---
 
-Install the required dependencies:
+## **Methodology**  
+1. **NC Ratio Calculation** – Extracts nucleus and cytoplasm pixel counts to compute the NC ratio.  
+2. **Statistical Analysis** – Evaluates predicted NC ratios against real values using Mean Absolute Error (MAE).  
+3. **Deep Learning Model** – Utilizes a PyTorch-based segmentation model to predict masks and assess NC ratios.  
+4. **Visualization** – Outputs scatter plots to analyze gene expression correlations.  
 
-Usage
-Prepare the Dataset:
+---
 
-Ensure your dataset is structured with images and corresponding masks.
-Update the test_dataset variable in the code to point to your dataset.
-Run the Code:
+## **Key Features**  
+- **Automated NC Ratio Computation** – Extracts meaningful biological insights from image masks.  
+- **Model Performance Evaluation** – Uses MAE to assess prediction accuracy.  
+- **Image Segmentation** – Employs deep learning for mask generation.  
+- **Flexible Data Processing** – Designed to handle various dataset formats.  
 
-Execute the script to calculate the MAE:
-Output:
+---
 
-The script will print the Mean Absolute Error (MAE) between real and predicted NC ratios.
-Functions
-nc_ratio(image)
-Calculates the Nucleus-to-Cytoplasm (NC) ratio for a given image mask.
+## **Dependencies**  
+Ensure the following Python libraries are installed:  
+- `numpy`  
+- `torch`  
+- `torchvision`  
+- `matplotlib`  
 
-Parameters:
+A trained PyTorch model (`model.pth`) is required for predictions.  
 
-image: A NumPy array representing the mask.
-Returns:
+---
 
-The NC ratio as a float.
-MAE_and_Results(dataset)
-Computes the Mean Absolute Error (MAE) between real and predicted NC ratios for a dataset.
+## **Installation**  
 
-Parameters:
+### **Clone this repository:**  
+```sh
+git clone <repository_url>
+cd EDITAISummerInternship
+```  
 
-dataset: A dataset containing images and their corresponding masks.
-Returns:
+### **Create a virtual environment and activate it:**  
+```sh
+python -m venv venv  
+source venv/bin/activate  # On macOS/Linux  
+venv\Scripts\activate  # On Windows  
+```  
 
-The MAE as a float.
-Model
-The code uses a PyTorch model for image segmentation. Ensure you have a trained model saved as model.pth in the project directory. The model is loaded using:
+### **Install dependencies:**  
+```sh
+pip install -r requirements.txt  
+```  
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+---
 
-Feel free to modify this README.md file to suit your specific project details! Let me know if you need further assistance.
+## **Usage**  
+
+### **Prepare the Dataset:**  
+- Ensure your dataset is structured with images and corresponding masks.  
+- Update the `test_dataset` variable to point to your dataset.  
+
+### **Run the Code:**  
+Execute the script to calculate the MAE:  
+```sh
+python main.py  
+```  
+
+### **Output:**  
+The script will print the Mean Absolute Error (MAE) between real and predicted NC ratios.  
+
+---
+
+## **Future Improvements**  
+- **Enhance Model Accuracy** – Train on a larger dataset to improve segmentation performance.  
+- **Automated Threshold Selection** – Implement adaptive thresholding for malignancy classification.  
+- **Real-time Processing** – Optimize performance for real-time image analysis.  
+- **Additional Visualization Tools** – Introduce heatmaps and histograms for deeper insights.  
