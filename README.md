@@ -80,6 +80,10 @@ The script will print the Mean Absolute Error (MAE) between real and predicted N
 
 ---
 
+### **Author**  
+Rohit Malavathu 
+rohitmalavathu@vt.edu
+
 ## **Future Improvements**  
 - **Enhance Model Accuracy** – Train on a larger dataset to improve segmentation performance.  
 - **Automated Threshold Selection** – Implement adaptive thresholding for malignancy classification.  
