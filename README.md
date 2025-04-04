@@ -1,4 +1,4 @@
-# **Project: EDITAISummerInternship**  
+# **Project: Nucleus-to-Cytoplasm Ratio Quantification Using Segmentation**  
 
 ---
 
