@@ -1,4 +1,4 @@
-# **Project: Nucleus-to-Cytoplasm Ratio Quantification Using Segmentation**  
+# **Nucleus-to-Cytoplasm Ratio Quantification Using Segmentation**  
 
 ---
 
