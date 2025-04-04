@@ -53,7 +53,7 @@ I also added the `huggingface_hub` package to the dependencies, which is necessa
 ### **Clone this repository:**  
 ```sh
 git clone <repository_url>
-cd EDITAISummerInternship
+cd EDITAIAdvancedTechQuestions
 ```  
 
 ### **Create a virtual environment and activate it:**  
@@ -61,12 +61,7 @@ cd EDITAISummerInternship
 python -m venv venv  
 source venv/bin/activate  # On macOS/Linux  
 venv\Scripts\activate  # On Windows  
-```  
-
-### **Install dependencies:**  
-```sh
-pip install -r requirements.txt  
-```  
+```
 
 ---
 
@@ -74,16 +69,10 @@ pip install -r requirements.txt
 
 ### **Prepare the Dataset:**  
 - Ensure your dataset is structured with images and corresponding masks.  
-- Update the `test_dataset` variable to point to your dataset.  
-
-### **Run the Code:**  
-Execute the script to calculate the MAE:  
-```sh
-python main.py  
-```  
+- Update the `test_dataset` variable to point to your dataset.   
 
 ### **Output:**  
-The script will print the Mean Absolute Error (MAE) between real and predicted NC ratios.  
+The script will print the Mean Absolute Error (MAE) between real and predicted NC ratios but updates can be made to output the ratios and images.
 
 ---
 
