@@ -30,14 +30,23 @@ The dataset consists of images and their corresponding segmentation masks. The m
 
 ## **Dependencies**  
 Ensure the following Python libraries are installed:  
-- `numpy`  
-- `torch`  
-- `torchvision`  
-- `matplotlib`  
 
-This line must be used to access that trained model:
-`model_path = hf_hub_download(repo_id="rohitmalavathu/NucleusCytoModel", filename="model.pth")`
+```bash
+pip install numpy torch torchvision matplotlib huggingface_hub
+```
+
+## **Loading the Trained Model**  
+Use the following line to download and access the trained model from the Hugging Face Hub:
+
+```python
+from huggingface_hub import hf_hub_download
+
+model_path = hf_hub_download(repo_id="rohitmalavathu/NucleusCytoModel", filename="model.pth")
+```
+
 ---
+
+I also added the `huggingface_hub` package to the dependencies, which is necessary to use `hf_hub_download()`.
 
 ## **Installation**  
 
