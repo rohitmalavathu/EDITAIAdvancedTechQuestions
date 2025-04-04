@@ -35,8 +35,8 @@ Ensure the following Python libraries are installed:
 - `torchvision`  
 - `matplotlib`  
 
-A trained PyTorch model (`model.pth`) is required for predictions.  
-
+This line must be used to access that trained model:
+`model_path = hf_hub_download(repo_id="rohitmalavathu/NucleusCytoModel", filename="model.pth")`
 ---
 
 ## **Installation**  
